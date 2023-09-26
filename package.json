@@ -2,6 +2,9 @@
   "name": "bun",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "hot": "bun --hot run ./app/server.js"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },
