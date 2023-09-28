@@ -1,3 +1,8 @@
 body {
-    background-color: rebeccapurple;
+    background-color: dodgerblue;
+}
+
+svg {
+    height: 1rem;
+    width: 1rem;
 }
