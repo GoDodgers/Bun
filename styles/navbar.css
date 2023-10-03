@@ -1,12 +1,8 @@
 @import './main.css';
 
 #hamburger {
-    height: 2.5rem;
-    width: 2.5rem;
-}
-
-#hamburger > path {
-    fill: var(--smoky-black);
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
 #rocket {
@@ -40,5 +36,5 @@ ul > li {
 }
 
 ul li:last-child {
-    transform: translateY(.2rem);
+    transform: translateY(.15rem);
 }
