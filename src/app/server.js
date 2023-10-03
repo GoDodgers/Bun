@@ -1,7 +1,6 @@
 import { file } from "bun";
 
 import * as fs from 'fs';
-import { unstable_renderSubtreeIntoContainer } from "react-dom";
 
 
 export const server = Bun.serve({
@@ -53,16 +52,6 @@ export const server = Bun.serve({
                 });
                 return curr;
             });
-
-            // fs.readdirSync(dist).filter((f) => f.match(/css$/)).forEach((f) => {
-            //     if (f != fName) {
-            //         console.log(import.meta.dist + '/' + f);
-            //         fs.unlink(import.meta.dist + '/' + f, (err) => {
-            //             if (err) throw err;
-            //             console.log(`${import.meta.dist + '/' + f} was deleted`);
-            //         });
-            //     }
-            // });
             
             console.log(`fName ::`, fName);
             var f = file('./dist/' + fName);
