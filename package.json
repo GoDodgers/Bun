@@ -5,7 +5,7 @@
   "scripts": {
     "hot": "bun --hot run ./src/app/server.js",
     "dev": "bun --watch run ./src/app/server.js",
-    "build": "bun build ./index.tsx --outdir=./dist --watch"
+    "build": "bun build ./index.tsx ./styles/main.css --outdir=./dist --watch"
   },
   "devDependencies": {
     "bun-types": "latest"
