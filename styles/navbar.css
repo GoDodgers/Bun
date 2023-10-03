@@ -1,17 +1,23 @@
 @import './main.css';
 
-svg {
+#hamburger {
     height: 2.5rem;
     width: 2.5rem;
 }
 
-svg > path {
+#hamburger > path {
     fill: var(--smoky-black);
 }
 
+#rocket {
+    height: 4rem;
+    width: 4rem;
+}
+
 nav {
-    min-height: 3.5rem;
+    min-height: 3.3rem;
     margin-inline-start: 1rem;
+    font-family: 'Pixelify Sans';
 
     display: flex;
     justify-content: space-between;
@@ -20,7 +26,7 @@ nav {
     /* outline: 2px solid red; */
 }
 
-nav:last-child {
+nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,4 +37,8 @@ ul > li {
     margin-inline-end: 1rem;
     font-weight: 700;
     font-size: large;
+}
+
+ul li:last-child {
+    transform: translateY(.2rem);
 }
