@@ -1,0 +1,34 @@
+@import './main.css';
+
+svg {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+svg > path {
+    fill: var(--smoky-black);
+}
+
+nav {
+    min-height: 3.5rem;
+    margin-inline-start: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* outline: 2px solid red; */
+}
+
+nav:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul > li {
+    display: inline-block;
+    margin-inline-end: 1rem;
+    font-weight: 700;
+    font-size: large;
+}

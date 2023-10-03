@@ -38,13 +38,13 @@ export const server = Bun.serve({
                     if (f.match(/main/) && url.pathname.match(/main/)) {
                         return true;
                     }
+                    if (f.match(/navbar/) && url.pathname.match(/navbar/)) {
+                        return true;
+                    }
                 }
                 return false;
-            });
-            
-            console.log(`distFiles Filtered ::\n`, fName);
-
-            fName.reduce((acc, curr) => {
+            })
+            .reduce((acc, curr) => {
 
                 console.log(`dist  + acc`, dist  + acc);
                 console.log(`dist  + curr`, dist  + curr);
@@ -74,7 +74,6 @@ export const server = Bun.serve({
         } else {
             var f = file("." + url.pathname);
         }
-        
         
         console.log(`f.size ::`, f.size, "\n");
 
